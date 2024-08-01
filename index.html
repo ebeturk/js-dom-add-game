@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Game (WIP)</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+      <div class="instructions alert alert-info">
+        <h5 class="text-success">Welcome to the DOM Manipulation Game!</h5>
+        <p>It's a simple game to practice adding elements to a webpage using different JavaScript methods. You'll write some JavaScript code to manipulate the DOM (Document Object Model) and see immediate results.</p>
+        <p>After completing the tasks, check your results and enjoy some fun memes!</p>
+        <p>It's my first attempt so all feedback is welcome.</p>
+        <p>Here are some key terms to help you:</p>
+        <ul>
+          <li><strong>DOM (Document Object Model)</strong>: The structure of a webpage that JavaScript can interact with. Think of it as a tree of elements (like paragraphs, buttons, and images) that make up the webpage.</li>
+          <li><strong>Node</strong>: A single point in the DOM tree. This can be an element, text, or other type of content.</li>
+          <li><strong>Node Object</strong>: A JavaScript object representing a node in the DOM.</li>
+          <li><strong>DOMString Object</strong>: A string used in the context of the DOM, usually representing HTML content.</li>
+        </ul>
+      </div>
+      <div id="gameArea" class="game-area mt-3" placeholder="Check your Results Here"></div>
+      <ul id="results" class="results list-unstyled"></ul>
+        <div id="methodDescriptions"></div>
+        <button class="btn btn-success my-3 d-flex mx-auto" onclick="checkResults()">Check Results</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
